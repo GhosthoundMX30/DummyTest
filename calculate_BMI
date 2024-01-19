@@ -1,0 +1,7 @@
+def BMI(height, weight):
+    pass
+
+if __name__ == "__main__":
+    name = input("Dame tu nombre: ")
+    w = float("Dame tu peso (kg): ")
+    h = float("Dame tu altura (cm): ")
