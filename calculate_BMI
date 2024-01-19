@@ -1,7 +1,11 @@
+from dummy import greeting
+
 def BMI(height, weight):
-    pass
+    return weight / (height/100)**2
 
 if __name__ == "__main__":
     name = input("Dame tu nombre: ")
-    w = float("Dame tu peso (kg): ")
-    h = float("Dame tu altura (cm): ")
+    w = float(input("Dame tu peso (kg): "))
+    h = float(input("Dame tu altura (cm): "))
+    print('\n', greeting(name))
+    print(f'\nTu IMC es: {round(BMI(h, w), 1)}')
